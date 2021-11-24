@@ -43,7 +43,8 @@ tasks {
     dependsOn(shadowJar)
 
     // replace caffeine class with our patched version
-    from(zipTree(shadowJar.get().archiveFile)) {
+    from(zipTree(shadowJar.map { it.archiveFile })) {
+    //from(zipTree(shadowJar.get().archiveFile)) {
       exclude("io/opentelemetry/instrumentation/api/internal/shaded/caffeine2/cache/BoundedLocalCache\$PerformCleanupTask.class")
       exclude("META-INF/**")
     }

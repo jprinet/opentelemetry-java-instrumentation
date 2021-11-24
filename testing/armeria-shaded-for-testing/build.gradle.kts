@@ -37,7 +37,8 @@ tasks {
     dependsOn(shadowJar)
     // there's both "LICENSE" file and "license" and without excluding one of these build fails on case insensitive file systems
     // there's a LICENSE.txt file that has the same contents anyway, so we're not losing anything excluding that
-    from(zipTree(shadowJar.get().archiveFile)) {
+    //from(zipTree(shadowJar.get().archiveFile)) {
+    from(zipTree(shadowJar.map { it.archiveFile })) {
       exclude("META-INF/LICENSE")
     }
     into("build/extracted/shadow")
