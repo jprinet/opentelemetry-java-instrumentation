@@ -24,7 +24,7 @@ ext {
   versions = [
     // these lines are managed by .github/scripts/update-version.sh
     opentelemetryJavaagent     : "1.21.0-SNAPSHOT",
-    opentelemetryJavaagentAlpha: "1.21.0-alpha-SNAPSHOT",
+    opentelemetryJavaagentAlpha: "1.22.0-alpha-SNAPSHOT",
 
     junit                      : "5.9.1"
   ]
