@@ -30,7 +30,7 @@ subprojects {
       opentelemetry              : "1.21.0",
 
       // these lines are managed by .github/scripts/update-version.sh
-      opentelemetryJavaagent     : "1.21.0-SNAPSHOT",
+      opentelemetryJavaagent     : "1.22.0-SNAPSHOT",
       opentelemetryJavaagentAlpha: "1.21.0-alpha-SNAPSHOT",
 
       bytebuddy                  : "1.12.19",
