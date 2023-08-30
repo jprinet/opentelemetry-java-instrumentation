@@ -16,7 +16,7 @@ plugins {
 }
 
 dependencies {
-  implementation(enforcedPlatform("io.quarkus.platform:quarkus-bom:3.1.3.Final"))
+  implementation(enforcedPlatform("io.quarkus.platform:quarkus-bom:3.3.1"))
   implementation("io.quarkus:quarkus-resteasy")
 }
 
